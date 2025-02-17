@@ -1,6 +1,6 @@
 # MovieVerse
 
-Movieverse is a web application designed to help users discover and explore movies. It provides movie recommendations, details, and trailers, all in one place. The project leverages the The Movie Database (TMDB) API to fetch movie data, including top-rated and popular movies, as well as trailers and details.
+Movieverse is a web application designed to help users discover and explore movies. It provides movie recommendations, details, and trailers, all in one place. The project leverages the, The Movie Database (TMDB) API to fetch movie data, including top-rated and popular movies, as well as trailers and details.
 
 # How to run the Project 
 
@@ -26,13 +26,13 @@ Pagination is implemented inside the Movies Page using Previous and Next
 
 #How to get API Token
 
-Step 1 signup at https://www.themoviedb.org/signup 
-Step 2 Verify the email before logging in, after verifying login using credentials 
-Step 3 Inside  profile under settings go to API
-Step 4 Choose the Developer option 
-Step 5 Go through the terms and conditions 
-Step 6 Select Desktop Application and fill in all the info  required 
-Step 7 Use the generated API token and use it inside config.js
+1. signup at https://www.themoviedb.org/signup 
+2. Verify the email before logging in, after verifying login using credentials 
+3. Inside profile under settings go to API
+4. Choose the Developer option 
+5. Go through the terms and conditions 
+6. Select Desktop Application and fill in all the info  required 
+7. Use the generated API token and use it inside config.js
 
 #API Endpoints Used
 Top-Rated Movies:
