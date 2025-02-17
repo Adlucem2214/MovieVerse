@@ -1,4 +1,4 @@
-export const API_Token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0MzgwMjIzYmZkZGZiMzQwOTRlOGRhZGJjMTllYWFiMiIsIm5iZiI6MTczOTgxNzk0OS41NzEsInN1YiI6IjY3YjM4M2RkZjM1ZDQxMDIwOTZkYWYxYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TyCwStVij1VPBFqyvo73xcYsRH_PxDGV877p8RlmXvg";
+export const API_Token = "";
 
   
   
