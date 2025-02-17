@@ -1,0 +1,44 @@
+fade-in {
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero-bg {
+    background-image: url('../image/back.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.gradient-overlay {
+    background: linear-gradient(180deg, #010114 0%, #080C34 50%, #010101 100%);
+    opacity: 0.8;
+}
+
+
+.text-gradient {
+    background: linear-gradient(45deg, #011750, #005586);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.button-gradient {
+    background: linear-gradient(90deg, #011750, #005586);
+    color: white;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.button-gradient:hover {
+    background: linear-gradient(90deg, #005586, #011750);
+}

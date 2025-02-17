@@ -1,0 +1,228 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #080C34 0%, #010114 50%, #010101 100%);
+    color: white;
+  }
+      
+
+      .hero {
+          background-image: url('../image/hero.png');
+          background-size: cover;
+          background-position: center;
+          position: relative;
+      }
+
+      .hero-overlay {
+          background: rgba(2, 3, 15, 0.33);
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+      }
+
+      .hero-content {
+          position: absolute;
+          top: 50%;
+          left: 5%;
+          transform: translateY(-50%);
+          color: white;
+          z-index: 10;
+      }
+
+      .hero-content h1 {
+          font-size: 4rem;
+      }
+
+      .hero-content p {
+          font-size: 1.25rem;
+      }
+
+      .button-gradient {
+          background: linear-gradient(90deg, #011750, #005586);
+      }
+
+.top-rated-card,
+.popular-card {
+position: relative;
+background-color: #1a202c;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+transition: all 0.3s ease;
+height: 300px; 
+}
+
+.top-rated-card:hover,
+.popular-card:hover {
+transform: scale(1.05);
+}
+
+.top-rated-card img,
+.popular-card img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.top-rated-card .details,
+.popular-card .details {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(0, 0, 0, 0.7);
+padding: 0.5rem;
+text-align: center;
+}
+
+.top-rated-card h3,
+.popular-card h3 {
+font-size: 1rem;
+color: white;
+margin: 0;
+}
+
+.top-rated-card p,
+.popular-card p {
+font-size: 0.9rem;
+color: white;
+margin: 0;
+}
+
+
+@media (max-width: 640px) {
+#topRatedMovies,
+#popularMovies {
+  grid-template-columns: repeat(1, 6fr);
+}
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+#topRatedMovies,
+#popularMovies {
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1.5rem; 
+}
+}
+
+@media (min-width: 1025px) {
+#topRatedMovies,
+#popularMovies {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem; 
+}
+}
+
+      
+      .star-rating {
+          display: flex;
+          gap: 2px;
+      }
+
+      .star-rating span {
+          color: gold;
+          font-size: 18px;
+      }
+
+     
+      .logo {
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #061D58, #005586);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .header-font {
+    font-family: 'Dragon Hunter', sans-serif;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    width: 250px;
+    height: 50px;
+    transition: all 0.3s ease;
+  }
+
+  .search-bar input {
+    background: transparent;
+    border: none;
+    color: white;
+    margin-left: 0.5rem;
+    width: 100%;
+  }
+
+  .search-bar input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .search-bar:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .search-results {
+    position: absolute;
+    top: 70px;
+    right: 2rem;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    display: none;
+    scrollbar-width: thin;
+    scrollbar-color: #005586 #010114;
+  }
+
+  .search-results.active {
+    display: block;
+  }
+
+  .search-results::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .search-results::-webkit-scrollbar-thumb {
+    background-color: #005586;
+    border-radius: 4px;
+  }
+
+  .search-results::-webkit-scrollbar-track {
+    background-color: #010114;
+  }
+
+  .search-result-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+
+  .search-result-card img {
+    width: 50px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .search-result-card h3 {
+    font-size: 0.9rem;
+    color: white;
+  }
+      
+
+      
+      @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(-10px); }
+          to { opacity: 1; transform: translateY(0); }
+      }
+
+      .fade-in {
+          animation: fadeIn 0.5s ease;
+      }

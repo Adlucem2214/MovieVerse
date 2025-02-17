@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #080C34 0%, #010114 50%, #010101 100%);
+    color: white;
+  }
+  .movie-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 88vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .movie-title{
+    font-family: 'Dragon Hunter', sans-serif;
+  }
+  .gradient-button {
+    background: linear-gradient(90deg, #011750, #005586);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .gradient-button:hover {
+    opacity: 0.9;
+  }
+
+
+
+  .logo {
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #061D58, #005586);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .header-font {
+    font-family: 'Dragon Hunter', sans-serif;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    width: 250px;
+    transition: all 0.3s ease;
+    height: 50px;
+  }
+
+  .search-bar input {
+    background: transparent;
+    border: none;
+    color: white;
+    margin-left: 0.5rem;
+    width: 100%;
+  }
+
+  .search-bar input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .search-bar:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .search-results {
+    position: absolute;
+    top: 70px;
+    right: 2rem;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    display: none;
+    scrollbar-width: thin;
+    scrollbar-color: #005586 #010114;
+  }
+
+  .search-results.active {
+    display: block;
+  }
+
+  .search-results::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .search-results::-webkit-scrollbar-thumb {
+    background-color: #005586;
+    border-radius: 4px;
+  }
+
+  .search-results::-webkit-scrollbar-track {
+    background-color: #010114;
+  }
+
+  .search-result-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+
+  .search-result-card img {
+    width: 50px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .search-result-card h3 {
+    font-size: 0.9rem;
+    color: white;
+  }

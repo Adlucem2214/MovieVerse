@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home_MovieVerse</title>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Dragon+Hunter&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
+    <link rel="stylesheet" href="css/output.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="text-white">
+
+
+
+<header class="p-4 sm:p-6 bg-gray-900 sticky top-0 z-50">
+    <nav class="flex flex-col sm:flex-row justify-between items-right gap-4 sm:gap-0">
+      <a href="landing.html"><div class="logo header-font ml-8">MovieVerse</div></a>
+      <div class="nav-links flex gap-4 sm:gap-6 mt-1">
+        <a href="index.html" class="text-white hover:text-gray-400 text-lg">Home</a>
+        <a href="movie.html" class="text-white hover:text-gray-400 text-lg">Movies</a>
+      </div>
+      <div class="search-bar">
+        <i class="fas fa-search text-white"></i>
+        <input type="text" id="searchInput" placeholder="Search Movies..." aria-label="Search Movies">
+      </div>
+      <div class="search-results" id="searchResults" role="list"></div>
+    </nav>
+</header>
+
+   
+    <section class="hero h-screen relative">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="text-5xl sm:text-6xl font-bold Dragon-Hunter">Avengers Endgame</h1>
+            <p class="mt-4 text-lg">⭐8.2 | 181 min | #Action #Sci-Fi #Adventure #Drama</p>
+            <p class="mt-6">Endgame is a 2019 American superhero film based on <br>the Marvel Comics superhero team the Avengers. Produced by Marvel Studios <br> and distributed by Walt Disney Studios Motion Pictures</p>
+            <div class="flex gap-6 mt-6">
+                <a href="detail.html?id=299534&section=trailer-section"><button class="px-6 py-2 bg-gradient-to-r from-[#011750] to-[#005586] text-white rounded">Watch Trailer</button></a> 
+        </div>
+    </section>
+
+    
+    <div class="p-12">
+
+       
+        <div id="top-rated" class="lg:mx-12 sm:mx-6">
+            <h2 class="text-3xl font-semibold mb-6">Top Rated</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6" id="topRatedMovies">
+            </div>
+        </div>
+
+       
+        <div id="popular" class="lg:mx-12 sm:mx-6">
+            <h2 class="text-3xl font-semibold my-16">Popular</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6" id="popularMovies">
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="bg-gray-900 p-6 mt-12">
+        <div class="flex flex-col sm:flex-row justify-between gap-6 text-white">
+          <div>
+            <h3 class="text-lg font-bold">MovieVerse</h3>
+            <p>Your ultimate destination for movie recommendations and entertainment.</p>
+          </div>
+          <div>
+            <h4 class="font-bold">Quick Links</h4>
+            <ul>
+              <li><a href="#" class="text-gray-400 hover:text-white">Movies</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">TV Shows</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">New Releases</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">Popular</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold">Legal</h4>
+            <ul>
+              <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">Cookie Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold">Connect With Us</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+              <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+              <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+              <a href="#" class="text-gray-400 hover:text-white">YouTube</a>
+            </div>
+          </div>
+        </div>
+        <p class="text-center text-gray-400 mt-4">© 2025 MovieVerse. All rights reserved.</p>
+      </footer>
+    
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
